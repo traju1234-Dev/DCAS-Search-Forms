@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "dcas-search-forms",
+    "id": "e68e1178-7679-4ed1-9b81-1ba5347ce906",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "DCAS-Search-Forms description"
+      },
+      "longDescription": {
+        "default": "DCAS-Search-Forms description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "dcas-search-forms Feature",
+        "description": "The feature that activates elements of the dcas-search-forms solution.",
+        "id": "480b6c84-209f-4e10-ba7a-6dd6f454ce42",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/dcas-search-forms.sppkg"
+  }
+}

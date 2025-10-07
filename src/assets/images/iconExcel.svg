@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>PDF</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1ABF74" offset="0%"></stop>
+            <stop stop-color="#009F57" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10.8,0 L15.3527208,0 C16.7444783,0 18,1.25552165 18,2.64727922 L18,7.2 L10.8,0 Z" id="path-2"></path>
+        <filter x="-55.6%" y="-83.3%" width="211.1%" height="211.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0909637238 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="202.2-Requestor-Form---sc-team" transform="translate(-52.000000, -991.000000)">
+            <g id="Group-6" transform="translate(52.000000, 966.000000)">
+                <g id="upload-attachment" transform="translate(0.000000, 25.000000)">
+                    <g id="files-icon-XLS" transform="translate(0.000000, -0.000000)">
+                        <g id="PDF">
+                            <path d="M10.8,0 L18,7.2 L18,19.08 C18,20.4717576 16.8717576,21.6 15.48,21.6 L2.52,21.6 C1.12824243,21.6 0,20.4717576 0,19.08 L0,2.52 C0,1.12824243 1.12824243,0 2.52,0 L10.8,0 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                            <g id="Path" transform="translate(14.400000, 3.600000) scale(-1, -1) translate(-14.400000, -3.600000) ">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <use fill-opacity="0.4" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            </g>
+                        </g>
+                        <g id="表格图" transform="translate(3.600000, 9.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M0.00328035874,7.19886866 L0.00328035874,6.59962203 L0.0044124843,6.59886709 L0.0044124843,4.78886709 L0.0028670852,4.78902931 L0.0028670852,4.18978267 L0.0044124843,4.18886709 L0.0044124843,2.37886709 L0.00241248431,2.37918996 L0.00241248431,1.77994332 L0.0044124843,1.77986709 L0.0044124843,0.601867085 L0.00241248431,0.602113722 L0.00241248431,0.0028670852 L7.19337213,0.0028670852 L7.19241248,0.0078670852 L7.19547982,0.0086529148 L7.19547982,7.19961256 L0.00328035874,7.19886866 Z M2.40941248,4.78886709 L0.603412484,4.78886709 L0.603412484,6.59886709 L2.40941248,6.59886709 L2.40941248,4.78886709 Z M4.19441248,4.78886709 L3.00841248,4.78886709 L3.00841248,6.59886709 L4.19441248,6.59886709 L4.19441248,4.78886709 Z M6.59541248,4.78886709 L4.79341248,4.78886709 L4.79341248,6.59886709 L6.59541248,6.59886709 L6.59541248,4.78886709 Z M2.40941248,2.37886709 L0.603412484,2.37886709 L0.603412484,4.18886709 L2.40941248,4.18886709 L2.40941248,2.37886709 Z M4.19441248,2.37886709 L3.00841248,2.37886709 L3.00841248,4.18886709 L4.19441248,4.18886709 L4.19441248,2.37886709 Z M6.59541248,2.37886709 L4.79341248,2.37886709 L4.79341248,4.18886709 L6.59541248,4.18886709 L6.59541248,2.37886709 Z M6.59541248,0.601867085 L0.603412484,0.601867085 L0.603412484,1.77986709 L6.59541248,1.77986709 L6.59541248,0.601867085 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

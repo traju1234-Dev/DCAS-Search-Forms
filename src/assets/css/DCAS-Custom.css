@@ -1,0 +1,3006 @@
+@font-face {
+    font-family: 'proxima_novablack';
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-black-webfont.eot');
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-black-webfont.woff2') format('woff2'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-black-webfont.woff') format('woff'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novabold';
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-bold-webfont.eot');
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-bold-webfont.woff2') format('woff2'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-bold-webfont.woff') format('woff'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novaextrabold';
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-extrabld-webfont.eot');
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-extrabld-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-extrabld-webfont.woff2') format('woff2'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-extrabld-webfont.woff') format('woff'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-extrabld-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-light-webfont.eot');
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-light-webfont.woff2') format('woff2'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-light-webfont.woff') format('woff'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-regular-webfont.eot');
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-regular-webfont.woff2') format('woff2'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-regular-webfont.woff') format('woff'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-semibold-webfont.eot');
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-semibold-webfont.woff') format('woff'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanova-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novathin';
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanovat-thin-webfont.eot');
+    src: url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanovat-thin-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanovat-thin-webfont.woff2') format('woff2'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanovat-thin-webfont.woff') format('woff'),
+        url('https://nyco365.sharepoint.com/sites/DCAS-ACRES-DEV/SiteAssets/REMS/fonts/proximanovat-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "proxima_novaregular";
+    font-size: 14px;
+    color: #000000;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.bold {
+    font-family: 'proxima_novabold';
+}
+
+.IOHomePage {
+    background: #f6f9ff;
+    padding: 20px;
+}
+
+.formDiv {
+    padding: 20px;
+}
+
+::placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+    color: #999999;
+    opacity: 1;
+}
+
+.noBgColor {
+    background: transparent;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.modal-header,
+.modal-footer {
+    border: 0;
+}
+
+/***********Home Page CSS started**************/
+.checkBoxCss {
+    color: #495057 !important;
+    border-color: #495057 !important;
+}
+
+.form-check-input:checked {
+    background-color: #495057;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25px #495057;
+}
+
+.AllTabs {
+    border: 0;
+}
+
+.AllTabs>li {
+    font-family: 'proxima_novaregular';
+    font-size: 15px;
+    color: #333333;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+.AllTabs>li:hover {
+    cursor: pointer;
+}
+
+.nav-tabs.AllTabs .nav-link {
+    padding: 0;
+    font-family: 'proxima_novaregular';
+    font-size: 15px;
+}
+
+.AllTabs .active {
+    color: #495057 !important;
+    background: #fff;
+    padding: 18px 10px !important;
+    font-family: 'proxima_novabold' !important;
+    border-top: 1px solid #495057;
+    border-left: 1px solid #495057;
+    border-right: 1px solid #495057;
+    border-bottom: none !important;
+    z-index: 9;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.AllTabs .active .nav-link,
+.nav-tabs.AllTabs .nav-link.active {
+    font-family: 'proxima_novabold' !important;
+    color: #495057;
+}
+
+.TabsData {
+    border: 1px solid #495057;
+    padding: 20px 10px;
+    position: inherit;
+    width: 100%;
+    background: #fff;
+    margin-top: -2px;
+    z-index: 0;
+}
+
+.scHeaderTitle {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.scHeaderTitleTxt {
+    font-family: 'proxima_novabold';
+    font-size: 24px;
+    color: #333333;
+    margin: 0;
+}
+
+.scHeaderLbl {
+    font-size: 12px;
+    color: #666666;
+}
+
+.scRequestTitle {
+    font-family: 'proxima_novabold';
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.ResReqTilesWraper,
+.CanvasComponent.LCS .row.ResReqTilesWraper {
+    margin-bottom: 15px;
+}
+
+.ResReqTileLbl {
+    opacity: 0.7;
+    font-family: 'proxima_novaregular';
+    font-size: 12px;
+    color: #333333;
+}
+
+.ResReqTileCount {
+    font-family: 'proxima_novabold';
+    font-size: 35px;
+    line-height: 1.3;
+    color: #666666;
+    display: block;
+}
+
+.ResReqTilesWraper>li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.ResReqTileInner {
+    background: #fff;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.10), 0 6px 30px 0 rgba(0, 0, 0, 0.10), 0 1px 18px 0 rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    padding: 1px 10px;
+    position: relative;
+    border: 1px solid #495057 !important;
+    width: 145px;
+}
+
+.ResReqTileInner:hover {
+    background: rgba(252, 252, 252, 0.41);
+    border: 1px solid #495057;
+    box-shadow: 0px 2px 12px 4px rgb(42 48 60 / 13%);
+    border-radius: 3px;
+}
+
+.ResReqTileInner:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: auto;
+    width: 35px;
+    height: 35px;
+    bottom: 10px;
+}
+
+.OpenReq .ResReqTileInner:before {
+    content: "\f022";
+    font: normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #059ff994;
+}
+
+.CloseReq .ResReqTileInner:before {
+    content: "\f00c";
+    font: normal normal normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #13bb04;
+}
+
+.InPrgrsReq .ResReqTileInner:before {
+    content: "\f2b6";
+    font: normal normal normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8b05f9ca;
+}
+
+.InPrgrsReq .ResReqTileInner:before {
+    content: "\f2b6";
+    font: normal normal normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8b05f9ca;
+}
+
+.DraftReq .ResReqTileInner:before {
+    content: "\f187";
+    font: normal normal normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #efb800;
+}
+
+.RejReq .ResReqTileInner:before {
+    content: "\f00d";
+    font: normal normal normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ed1c1ccf;
+}
+
+.SubmitedReq .ResReqTileInner:before {
+    content: "\f164";
+    font: normal normal normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #008e90;
+}
+
+.AppoveReq .ResReqTileInner:before {
+    content: "\f00c";
+    font: normal normal normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #13bb04;
+}
+
+.AcceptedReq .ResReqTileInner:before {
+    content: "\f2b5";
+    font: normal normal normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8b05f9ca;
+}
+
+.BookedReq .ResReqTileInner:before {
+    content: "\f212";
+    font: normal normal normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #13bb04;
+}
+
+.StoreReq .ResReqTileInner:before {
+    content: "\f218";
+    font: normal normal normal 14px FontAwesome;
+    background-color: #b9b9b961;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    left: auto;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #13bb04;
+}
+
+.tblSearchBox {
+    width: 90%;
+}
+
+table.dataTable.ResReqDataTable {
+    width: 100% !important;
+    margin: 10px 0;
+    -webkit-box-shadow: -1px 6px 26px -6px rgba(193 238 241);
+    -moz-box-shadow: -1px 6px 26px -6px rgba(193 238 241);
+    box-shadow: -1px 6px 26px -6px rgba(193 238 241);
+    font-family: "proxima_novaregular";
+}
+
+.ResReqDataTable thead {
+    background: #d6d6d6;
+    font-family: 'proxima_novasemibold';
+    font-size: 14px;
+}
+
+table.dataTable.display.ResReqDataTable tbody tr.odd,
+table.dataTable.display.ResReqDataTable tbody tr.even,
+table.dataTable.display.ResReqDataTable tbody td.sorting_1 {
+    background-color: transparent;
+}
+
+.ResReqDataTable tbody {
+    background: #fff;
+}
+
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable.no-footer {
+    border-bottom: 1px solid #E0E6FF;
+}
+
+table.dataTable.ResReqDataTable tbody td,
+table.dataTable.ResReqDataTable thead th {
+    text-align: left;
+    padding: 10px 12px;
+}
+
+table.dataTable.ResReqDataTable tbody td {
+    padding: 2px 12px;
+}
+
+.no-sort input[type="text"],
+.dataTables_length,
+.dataTables_paginate>span {
+    display: none;
+}
+
+.tblSearchExport {
+    position: relative;
+    display: inline-block;
+    bottom: 25px;
+    float: right;
+    width: 60%
+}
+
+.dataTables_wrapper {
+    bottom: -10px;
+}
+
+.searchColSection {
+    position: absolute;
+    bottom: 0px;
+    width: 600px;
+    background: #fff;
+    right: 100%;
+    padding: 5px 5px;
+    border: 1px solid #495057;
+    border-right: 0;
+}
+
+.searchColSection>input {
+    width: 20.9%;
+    font-size: 12px;
+    display: inline-block;
+    border: 0;
+    border-right: 1px solid #ccc;
+}
+
+.searchColSection>input:last-child {
+    border: 0;
+    width: 13%;
+}
+
+.createNewAndSearch {
+    position: absolute;
+    right: 0;
+    top: -15px;
+}
+
+.createNewBtn {
+    background: #495057;
+    border: 1px solid #495057;
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px 7px;
+    position: relative;
+    top: 10px;
+}
+
+.createNewBtn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.searchIcon {
+    background: #fff;
+    color: #495057;
+    border: 1px solid #495057;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 4px 7px;
+}
+
+.searchIcon:focus,
+.createNewBtn:focus,
+.formTxtArea:focus,
+button:focus {
+    outline: 0;
+}
+
+.searchIcon:before {
+    content: "\f002";
+    font: normal normal normal 14px FontAwesome;
+}
+
+.searchIconWrap {
+    display: inline-block;
+    position: relative;
+}
+
+.searchIcon {
+    font-size: 15px;
+}
+
+.exportBtn {
+    position: relative;
+    padding-right: 30px;
+}
+
+.exportBtn:before {
+    content: "\f0d7";
+    font: normal normal normal 18px FontAwesome;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+.exportOptions {
+    font-size: 14px;
+    font-family: "proxima_novaregular";
+    position: absolute;
+    background: #fff;
+    z-index: 99;
+    padding: 10px;
+    width: 270px;
+    right: 30px;
+    -webkit-box-shadow: 0px 2px 26px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 26px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 26px -11px rgba(0, 0, 0, 0.75);
+}
+
+.exportDateField {
+    display: inline-block;
+    width: 49%;
+    color: #b5b5b5;
+    font-size: 12px;
+}
+
+.exportDateField .input-group-addon {
+    padding: 5px;
+    border-left: 1px solid #ccc;
+    border-right: 0 !important;
+}
+
+.exportDateField .glyphicon {
+    font-size: 11px;
+}
+
+.exportDateField .form-control {
+    border-left: 0;
+    border-right: 1px solid #ced4da;
+    font-size: 12px;
+    padding: 3px 3px;
+}
+
+.exportClickBtn {
+    padding: 2px 12px;
+    background: #3ab0d8;
+    border: 1px solid #3ab0d8;
+    margin: 10px 0;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+.exportFilterList>.exportFilterItem {
+    margin-top: 10px;
+}
+
+.exportFilterList>.exportFilterItem:first-child {
+    margin-top: 0;
+}
+
+.exportFilterList>.exportFilterItem span {
+    border: 1px solid #cccccc;
+    width: 100%;
+    padding: 3px 0;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selectedFilter {
+    background: #3ab0d8;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    border: 1px solid #3ab0d8 !important;
+}
+
+.TblSmallLbl {
+    display: block;
+    font-family: 'proxima_novalight';
+    font-size: 12px;
+    color: #333333;
+}
+
+.TblLbl {
+    font-size: 14px;
+    color: #333333;
+}
+
+.red {
+    color: #495057;
+}
+
+.TblStatus {
+    border-radius: 17px;
+    font-family: 'proxima_novasemibold';
+    font-size: 14px;
+    padding: 2px 8px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.TblStatus.approved {
+    background: #EEF3E7;
+    color: #719A36;
+    border: 1px solid #719A36;
+    width: 90px;
+}
+
+.TblStatus.hold {
+    background: #FFF5DB;
+    color: #F7B500;
+}
+
+th.CustomWidth {
+    width: 80px !important;
+}
+
+.TblStatus.draft {
+    background: #ffeeee;
+    color: #495057;
+}
+
+.TblStatus.closed {
+    background: #EAFAF1;
+    color: #1D8348;
+}
+
+.assignToDrpDwn {
+    background: #FFF5F5;
+    border-radius: 17px;
+    font-family: 'proxima_novasemibold';
+    font-size: 14px;
+    color: #ED1C24;
+    position: relative;
+    padding: 4px 14px 4px 7px;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.assignToDrpDwn:after {
+    content: "\f0d7";
+    font: normal normal normal 14px FontAwesome;
+    position: absolute;
+    right: 4px;
+    top: 7px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #FFFFFF;
+    border: 1px solid #C6CBD4;
+    border-radius: 2px;
+    margin-left: 10px;
+    padding: 2px;
+    color: #000 !important;
+}
+
+.paginate_button.previous:before,
+.paginate_button.next:before {
+    font: normal normal normal 14px FontAwesome;
+}
+
+.paginate_button.previous:before {
+    content: "\f0d9";
+}
+
+.paginate_button.next:before {
+    content: "\f0da";
+}
+
+/** Create Form **/
+.formHeader {
+    margin-bottom: 20px;
+}
+
+.formHeaderTitle {
+    font-family: 'proxima_novabold';
+    font-size: 25px;
+    color: #333333;
+}
+
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+
+.scDatepicker input {
+    padding: 3px 7px;
+    height: auto;
+    background: #fff;
+    width: auto;
+    font-size: 14px;
+    border-right: 0;
+}
+
+.scDatepicker input[readonly] {
+    background: #fff;
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-calendar:before{
+    content: "\f133";
+}
+
+.bootstrap-datetimepicker-widget table td span {
+    color: #495057 !important;
+}
+
+.btn:first-child:active {
+    background: none !important;
+    border: none !important;
+    color: transparent !important;
+}
+.bootstrap-datetimepicker-widget button[data-action] {
+    background-color: #495057 !important;
+    border: none !important;
+}
+
+.glyphicon-chevron-up:before, .bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"]::after {
+    content: "\f062" !important;
+}
+
+.glyphicon-chevron-down:before, .bootstrap-datetimepicker-widget .btn[data-action="decrementHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"]::after {
+    content: "\f063" !important;
+}
+
+.closeForm {
+    background: #676767;
+    border: 2px solid #676767;
+    color: #ffffff;
+    padding: 3px 10px;
+}
+
+.formField1 {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.formFieldRow {
+    border-bottom: 1px solid #979797;
+    margin-bottom: 15px;
+}
+
+.noBorder {
+    border: 0;
+}
+
+.mandatory {
+    color: #f44336;
+    font-size: 14px;
+    font-family: 'proxima_novabold';
+    padding: 5px 5px;   
+}
+
+.lblRequired {
+    color: #495057;
+    font-size: 14px;
+    font-family: 'proxima_novabold';
+}
+
+.lblSuccess {
+    color: green;
+    font-size: 14px;
+    font-family: 'proxima_novabold';
+}
+
+.infoLbl {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    bottom: 3px;
+}
+
+.infoIcon {
+    color: #495057;
+}
+
+.arrowTooltip:before {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    position: absolute;
+    left: -3px;
+    bottom: 20px;
+    z-index: 9;
+}
+
+.infoTooltip {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.20), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    width: 205px;
+    bottom: 30px;
+    left: -20px;
+    border-radius: 8px;
+    padding: 2px 10px;
+}
+
+.formHeaderLbl {
+    font-size: 12px;
+    color: #666666;
+    display: block;
+}
+
+.formTitle {
+    font-family: 'proxima_novabold';
+    font-size: 16px;
+    color: #0071EA;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.formTxtArea,
+.formTxtBox,
+.formDrpDwn {
+    display: block;
+    padding: 4px 10px;
+    width: 80%;
+    margin-top: 4px;
+}
+
+.formDrpDwn {
+    padding: 5px 7px;
+}
+
+input[disabled],
+textarea[disabled],
+select[disabled] {
+    padding: 4px 7px;
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+    color: rgb(0, 0, 0);
+}
+
+input[disabled]+.input-group-addon {
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+    z-index: -2;
+}
+
+.formTxtArea {
+    border: 1px solid rgba(102, 102, 102, 0.80);
+    resize: none;
+    width: 100%;
+    height: 60px;
+}
+
+.escalateLink,
+.escalateLink:hover {
+    cursor: pointer;
+}
+
+.uploadBilLbl {
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 25px;
+    font-size: 13px;
+}
+
+.uploadBilLbl:before {
+    content: "";
+    background: url("../images/iconExcel.svg");
+    background-size: 20px;
+    width: 20px;
+    height: 22px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.dragDropSection {
+    border: 2px dashed #ccc;
+    text-align: center;
+    padding: 15px;
+    width: 80%;
+}
+
+.dragDropLbl:before {
+    content: "";
+    background: url("../images/iconDragDrop.svg");
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 auto 10px;
+    left: 50%;
+    position: absolute;
+    top: 15px;
+    transform: translate(-50%);
+}
+
+.dragDropLbl {
+    font-size: 12px;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 0 2px;
+    color: #0071EA;
+    cursor: pointer;
+}
+
+.scBtn {
+    border-radius: 2px;
+    color: #fff;
+    background: #495057;
+    border: 1px solid #495057;
+    cursor: pointer;
+    padding: 4px 10px;
+    margin-right: 15px;
+}
+
+.scBtn:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.scBtn[disabled] {
+    background: #999999;
+    border: 1px solid #999999;
+    cursor: default;
+}
+
+.scBtnLink {
+    font-family: 'proxima_novasemibold';
+    font-size: 14px;
+    color: #ED1C24;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.AddNoteLink {
+    font-family: 'proxima_novabold' !important;
+}
+
+.scFormTabs {
+    margin-bottom: 15px;
+}
+
+.publishNoteSection {
+    margin: 5px 0;
+}
+
+.publishNoteSection>span {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px !important;
+    font-family: proxima_novaregular !important;
+}
+
+.publishNoteLbl {
+    font-family: 'proxima_novasemibold';
+    font-size: 16px;
+    color: #333333;
+}
+
+.publishNoteCount {
+    font-size: 12px;
+    color: #666666;
+}
+
+.viewNoteLink1 {
+    font-family: 'proxima_novasemibold';
+    font-size: 14px;
+    color: #0071EA;
+    cursor: pointer;
+}
+
+.scWhiteBtn {
+    background: #fff;
+    color: #495057;
+    font-weight: 600;
+}
+
+.scWhiteBtn:hover {
+    color: #495057;
+}
+
+.attachFilBlock {
+    border: 1px solid #dcdcdc;
+    color: #333333;
+    font-size: 14px;
+    font-family: 'proxima_novaregular';
+}
+
+.attachFilHeader {
+    padding: 4px;
+    text-align: center;
+    background: #eeeeee;
+    margin-bottom: 10px;
+}
+
+.attchedFileList {
+    padding: 0 10px;
+}
+
+.attchedFile {
+    margin-top: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    list-style-type: none !important;
+}
+
+.ResReqDataTable>tbody>tr>td:first-child a {
+    text-decoration: underline;
+}
+
+.ms-BasePicker-itemsWrapper .ms-Persona-primaryText {
+    color: #000000;
+}
+
+.scDatepicker input[disabled] {
+    border: 1px solid #eee;
+    width: 100% !important;
+}
+
+.scDatepicker input[disabled]+.input-group-addon {
+    display: none;
+}
+
+div#people {
+    width: 100%;
+}
+
+.attchedFile:first-child {
+    margin-top: 0;
+}
+
+/** Datatable on resposive +/- **/
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th.dtr-control:before {
+    color: #007bff;
+    color: #007bff;
+    box-shadow: 0 0 0 0;
+    background: transparent;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th.dtr-control:before {
+    content: "\f054";
+    font: normal normal normal 14px FontAwesome;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th.dtr-control:before {
+    content: "\f078";
+    font: normal normal normal 14px FontAwesome;
+}
+
+.ResReqDataTable td.child>ul {
+    width: 100%;
+}
+
+table.dataTable tr.child .dtr-title {
+    margin-right: 25px;
+    min-width: auto;
+}
+
+/** Escalate Success popup style **/
+.escalateHeader,
+.escalateFooter {
+    border: 0;
+}
+
+.closeModal {
+    padding: 5px 10px;
+}
+
+.tick {
+    color: #06B800;
+    border: 2px solid #06B800;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 0 31%;
+    position: relative;
+    left: 15px;
+    text-align: center;
+}
+
+.tick:before {
+    content: "\f00c";
+    font: normal normal normal 30px FontAwesome;
+    line-height: 2.2;
+}
+
+.EscalateTitle {
+    font-family: 'proxima_novasemibold';
+    font-size: 22px;
+    color: #333333;
+    margin: 0px 0 15px;
+}
+
+.EscalateLbl {
+    font-size: 16px;
+    color: #888888;
+    font-family: 'proxima_novaregular';
+}
+
+.escalateFooter {
+    display: inline-block;
+}
+
+.RedBtn {
+    background: #ED1C24;
+    border-radius: 4px;
+    color: #fff;
+    padding: 2px 10px;
+}
+
+.RedBtn:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+/** Uploaded Quotes Style  **/
+.quoteTable {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.quoteTable thead {
+    background: #edf0ff;
+}
+
+.quoteTable td,
+.quoteTable th {
+    padding: 12px;
+    border-top: 1px solid #ddd;
+}
+
+.QuoteLink {
+    font-family: 'proxima_novabold';
+    color: #495057;
+    cursor: pointer;
+}
+
+.QuoteLink+.QuoteLink {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #B8B8B8;
+}
+
+/** Assign to popup **/
+.assignedLbl i {
+    font-style: normal;
+}
+
+.assignDropdown {
+    margin: 10px 0;
+}
+
+.assignDropdown select {
+    display: inline-block;
+    margin-left: 10px;
+    width: 65%;
+}
+
+.assignedLbl {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "proxima_novaregular";
+}
+
+/** Published note popup **/
+.modal.fade .modal-dialog {
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+}
+
+#viewComment .modal-title {
+    font-family: proxima_novabold !important;
+    font-size: 18px;
+}
+
+#viewAllNotePopup .modal-header {
+    min-height: 16.428571429px;
+    padding: 10px 5px 10px 10px;
+    border-bottom: 1px solid #495057;
+    display: block;
+    background-color: #495057;
+}
+
+.publishHeader {
+    font-family: 'proxima_novabold';
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#viewUpdatePopup .modal-body, #viewErrorPopup .modal-body, #fileConflictModal .modal-body, #viewSuccessPopup .modal-body {
+    padding: 10px 10px;
+    font-size: 14px;
+    max-height: 350px;
+    height: 100%;
+    overflow-y: auto;
+    font-family: 'proxima_novaregular';
+}
+
+#fileConflictModal .modal-body .itemName {
+     font-family: 'proxima_novabold';
+}
+
+.btn-default {
+    color: #000000;
+    background-color: #fff;
+    border-color: #495057;
+    font-size: 14px;
+    font-family: "proxima_novaregular" !important;
+}
+
+#viewAllNotePopup .btn:hover {
+    border: 1px solid #495057;
+    background-color: #fff;
+}
+
+#viewAllNotePopup .btn.focus,
+#viewAllNotePopup .btn:focus {
+    outline: 0;
+    box-shadow: rgba(153, 51, 51, 0.3) 0px 0px 0px 0.2rem !important;
+}
+
+.modalSunTitle {
+    font-size: 14px !important;
+    font-family: 'proxima_novaregular' !important;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 0px 10px 10px 10px;
+}
+
+.publishedNoteList>li {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.publishedNoteList>li:first-child {
+    border-top: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.publishedNoteHead {
+    margin-bottom: 5px;
+}
+
+.publishedNoteHead span {
+    font-family: 'proxima_novabold';
+}
+
+.publishedNoteHead span+span {
+    /* border-left: 1px solid #ccc; */
+    padding-left: 7px;
+    margin-left: 7px;
+    float: right;
+}
+
+/** Drag Drop styke **/
+.browseBlock,
+.fileBrowsedList {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.upload {
+    height: 100px;
+    margin: 0;
+    position: relative;
+    border: 2px dashed #ccc;
+    text-align: center;
+    padding: 15px 5px;
+    cursor: pointer;
+}
+
+.upload input,
+.upload input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 14px !important;
+    font-family: proxima_novaregular !important;
+}
+
+.upload p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0;
+    padding-top: 50px;
+    font-size: 14px !important;
+    font-family: proxima_novaregular !important;
+}
+
+.upload p mark {
+    background-color: transparent;
+}
+
+.upload p span {
+    color: #495057;
+    font-weight: 600;
+}
+
+.fileBrowsedList {
+    border: 1px solid #ccc;
+    font-size: 13px;
+    border-radius: .25rem;
+}
+
+.uploadedHeader {
+    background: #eeeeee;
+    padding: 5px 10px;
+}
+
+.browseFileListItem li {
+    padding: 5px 10px 0;
+}
+
+.fileProgressBar {
+    background: #09ab62;
+    width: 38%;
+    display: inline-block;
+    height: 2px;
+    vertical-align: top;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.closeFileBrowse,
+.RemoveUploadedFile,
+.closeIcon {
+    margin-left: 10px;
+    vertical-align: top;
+    color: #8a8a8a;
+    cursor: pointer;
+}
+
+.closeFileBrowse:before,
+.RemoveUploadedFile:before,
+.closeIcon:before {
+    content: "\f00d";
+    font: normal normal normal 14px FontAwesome;
+}
+
+.fileName {
+    padding-left: 18px;
+    position: relative;
+    width: 48%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px !important;
+    font-family: proxima_novaregular !important;
+}
+
+.fileName:before {
+    content: "\f093";
+    font: normal normal normal 14px FontAwesome;
+    color: #495057;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.browseFileListItem {
+    height: 70px;
+    overflow-y: auto;
+}
+
+/** View form changes **/
+.HeaderReqID {
+    float: right;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'proxima_novasemibold';
+    border-radius: 2px;
+    background: none;
+    border: 1px solid #495057;
+    padding: 4px 10px;
+}
+
+.HeaderReqStatus {
+    color: #000000;
+    font-size: 14px;
+    font-family: 'proxima_novasemibold';
+    border-radius: 2px;
+    background: none;
+    border: 1px solid #495057;
+    padding: 4px 10px;
+    vertical-align: middle;
+    float: left;
+}
+
+.HeaderReqStatus,
+.HeaderQtNumber {
+    margin-right: 10px !important;
+}
+
+.fa-circle-check {
+    color: #28a745 !important;
+}
+
+.py-5 {
+    font-family: proxima_novabold !important;
+    font-size: 16px;
+}
+
+.editFormHeader {
+    float: right;
+}
+
+.editFormBtn {
+    background: #495057;
+    color: #fff;
+    border: 1px solid #495057;
+    padding: 3px 12px;
+    border-radius: 3px;
+}
+
+.BackFormBtn {
+    background: #676767;
+    border: 1px solid #676767;
+    color: #fff;
+    padding: 3px 12px;
+    margin-left: 3px;
+    border-radius: 3px;
+}
+
+.rejectTxtBox {
+    width: 250px;
+    height: 75px;
+    display: block;
+    padding: 5px;
+}
+
+.rejectBtn {
+    margin-top: 20px;
+}
+
+.esclateTxtBox {
+    color: #888888;
+}
+
+.esclateTxtBox input {
+    width: 70%;
+    margin-left: 10px;
+    border: 1px solid #888;
+    color: #888;
+    padding: 4px;
+}
+
+.refresh:before {
+    content: "\f00d";
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+.refresh {
+    display: none;
+    border: 1px solid #495057;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.fa-copy {
+    margin-left: 3px;
+    color: #017cff;
+    cursor: pointer;
+}
+
+.fa-copy:before {
+    content: "\f0c5";
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+/** Loader **/
+.pageLoader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    z-index: 9;
+}
+
+.pageLoader:before {
+    content: "\f110";
+    animation: fa-spin 1s infinite steps(8);
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 35px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8);
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+div#spSiteHeader.root-42 {
+    display: none !important;
+}
+
+.formField1Lbl,
+.formTxtArea,
+.formDrpDwn {
+    font-family: 'proxima_novaregular';
+    font-size: 14px;
+    color: #000000;
+}
+
+.formTxtArea,
+.formTxtBox,
+.formDrpDwn,
+.scDatepicker input,
+.scDatepicker span {
+    border: 1px solid rgba(102, 102, 102, 0.80);
+}
+
+.scDatepicker input {
+    border-radius: 0;
+    border-right: 0;
+}
+
+/* .scDatepicker span {
+    border-left: 0;
+} */
+
+.formFieldRow {
+    margin-bottom: 15px !important;
+    margin-left: 0 !important;
+    padding-left: 0;
+}
+
+.formTxtArea {
+    width: 80%;
+}
+
+table.dataTable.ResReqDataTable tbody td,
+table.dataTable.ResReqDataTable thead th {
+    text-align: center !important;
+}
+
+/** 26th Nov **/
+table.dataTable.ResReqDataTable tbody td,
+.quoteTable td {
+    padding: 2px 12px;
+    vertical-align: middle;
+}
+
+.DTShowMorelink {
+    background: #007bff;
+    color: #fff;
+}
+
+.popupBlueTitle {
+    color: #0578f5;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.scPopupHeader {
+    padding: 0 10px 0 0;
+}
+
+.scPopupBody {
+    padding-top: 0;
+}
+
+.hide {
+    display: none;
+}
+
+div#spLeftNav {
+    display: none !important;
+}
+
+#spSiteHeader {
+    display: none !important;
+}
+
+.webPartContainer {
+    display: none;
+}
+
+section.mainContent.qj_bg_ada2ac09 {
+    display: none !important;
+}
+
+div#CommentsWrapper {
+    display: none !important;
+}
+
+nav[role='navigation'] {
+    display: none !important;
+}
+
+div[class^='searchBox_'] {
+    display: none !important;
+}
+
+div[class^='pageContainer_'] {
+    left: 0 !important;
+}
+
+.CanvasComponent.LCS .CanvasZone.CanvasZone--alignment {
+    max-width: 100% !important;
+}
+
+.fa-copy {
+    margin-left: 3px;
+    color: #017cff;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.pageLoader:before {
+    content: "\f110";
+    animation: fa-spin 1s infinite steps(8);
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 35px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8);
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+/* Changes 28th Nov */
+.tick {
+    border: 5px solid #06b800;
+    margin: 0 35%;
+}
+
+#EscalatedPopup .modal-dialog {
+    max-width: 420px;
+}
+
+.scBtn {
+    margin-bottom: 15px;
+}
+
+.popupBlueTitle {
+    font-weight: bold;
+    font-family: "proxima_novaregular";
+}
+
+.ms-BasePicker-text {
+    min-width: auto;
+}
+
+.attchedFileList {
+    padding: 0 10px 10px;
+}
+
+#escalateCommentId:required {
+    box-shadow: 0 0;
+}
+
+/***********Added by Raju**************/
+/***********New Request form CSS started**************/
+
+
+.formHeaderSub {
+    font-size: 14px;
+    color: #666;
+    font-family: 'proxima_novaregular';
+}
+
+.spnHeader {
+    color: #495057;
+    font-family: proxima_novabold;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.spnRight {
+    text-align: right;
+}
+
+.spnCenter {
+    text-align: center;
+}
+
+.btnPrimaryGrey,
+.btnPrimaryRed,
+.btnPrimaryBlue {
+    font-size: 14px;
+    font-family: 'proxima_novaregular' !important;
+    border-radius: .25rem;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.btnPrimaryRed {
+    background-color: #495057;
+    border-color: #495057;
+}
+
+.btnPrimaryBlue {
+    background-color: #3ab0d8;
+    border-color: #3ab0d8;
+}
+
+.btnPrimaryBlue.hover,
+.btnPrimaryBlue:hover,
+.btnPrimaryBlue.active,
+.btnPrimaryBlue:active {
+    color: #fff !important;
+    background-color: #3ab0d8 !important;
+    border-color: #3ab0d8 !important;
+}
+
+.btnPrimaryGrey {
+    background-color: #676767;
+    border-color: #676767;
+}
+
+.btnPrimaryRed.focus,
+.btnPrimaryRed:focus {
+    box-shadow: rgba(153, 51, 51, 0.3) 0px 0px 0px 0.2rem !important;
+}
+
+.btnPrimaryRed.hover,
+.btnPrimaryRed:hover {
+    color: #fff !important;
+}
+
+.infoCircle-bottom {
+    cursor: pointer;
+}
+
+.tooltip {
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    font-family: 'proxima_novaregular' !important;
+}
+
+.fade.in {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow:before,
+.bs-tooltip-bottom .arrow:before {
+    border-bottom-color: #495057 !important;
+}
+
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #495057 !important;
+}
+
+.tooltip-inner {
+    background-color: #495057 !important;
+}
+
+.lblchkbox {
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.popUpSuccessHeader {
+    padding: 10px 5px 10px 10px;
+    background-color: #495057;
+}
+
+.errorMsg {
+    color: #f44336;
+    font-weight: 500;
+}
+
+.lblContent,
+.lblUpload {
+    margin-bottom: 5px !important;
+    font-size: 14px !important;
+    font-family: 'proxima_novaregular' !important;
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 8px !important;
+}
+
+/* datalist */
+.datalist-input .autocomplete-input {
+    width: 100%;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da !important;
+    border-radius: 0.25rem !important;
+    padding: 0.375rem 0.75rem !important;
+    font-size: 14px !important;
+    font-family: proxima_novaregular !important;
+
+}
+
+.datalist-input .datalist-active-item-default {
+    background-color: DodgerBlue;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+.datalist-input .default-datalist-items div:not(.datalist-active-item) {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: none;
+}
+
+.datalist-input .default-datalist-items {
+    border: 1px solid #d4d4d4;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    max-height: 180px;
+    overflow-y: scroll;
+    font-size: 14px !important;
+    font-family: proxima_novaregular !important;
+}
+
+.datalist-input .datalist-active-item-default {
+    background-color: #495057;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* datalist end */
+.form-control,
+.form-select,
+.ms-BasePicker-text,
+.table-condensed {
+    font-size: 14px !important;
+    font-family: 'proxima_novaregular' !important;
+}
+
+.hr {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.lblUploadIcon {
+    color: #495057;
+    font-size: 18px;
+    margin: 0px 10px 0px 0px;
+}
+
+.lblUpload {
+    margin-left: 5px;
+}
+
+.ms-BasePicker-itemsWrapper .ms-Persona-primaryText {
+    font-size: 14px !important;
+    font-family: 'proxima_novaregular' !important;
+    color: #ffffff !important;
+}
+
+.ms-BasePicker-itemsWrapper>div,
+.ms-BasePicker-itemsWrapper>div button {
+    background: #3ab0d8 !important;
+    color: #fff !important;
+}
+
+.removeButton-263 .ms-Button-icon {
+    color: #fff !important;
+}
+
+.themeBtn {
+    color: #495057;
+    background-color: transparent;
+}
+
+.ms-BasePicker-text::after {
+    border: 1px solid #C7E0F4 !important;
+    border-radius: 5px !important;
+}
+
+.removeButton-169 .ms-Button-icon {
+    color: #fff !important;
+}
+
+.ms-BasePicker-text {
+    display: block;
+    width: 100%;
+    height: calc(1.8em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.iconCalendar {
+    color: #495057;
+    cursor: pointer;
+}
+
+.ms-BasePicker-text:hover,
+.ms-BasePicker-text:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+@media screen and (min-width: 1024px) {
+    .a_h_50a7110f:not(.b_h_50a7110f) .r_h_50a7110f {
+        max-width: 100%;
+        width: 100%
+    }
+}
+
+.iconCalendarContainer {
+    padding: 2px 5px;
+    line-height: 1;
+    background-color: #fff;
+    border: none !important;
+}
+
+.inputCalendarbox {
+    border: none !important;
+    height: calc(.7em + .75rem + 2px) !important;
+    padding: 0px 0px !important;
+}
+
+.ms-BasePicker-input {
+    width: 100% !important;
+}
+
+.publishedNoteDEtails,
+.tblUploadedQuote {
+    font-size: 14px !important;
+    font-family: proxima_novaregular !important;
+}
+
+.spnPageNation {
+    font-size: 14px;
+    font-family: proxima_novaregular;
+    padding: 10px 0px 0px 0px;
+}
+
+/*************Table Responsive********************/
+.ResReqDataTable thead tr th {
+    text-align: center;
+    font-weight: 700 !important;
+    vertical-align: middle;
+}
+
+.table-responsive-stack tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.table-responsive-stack td,
+.table-responsive-stack th {
+    display: block;
+    /*flex-grow | flex-shrink | flex-basis   */
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.table-responsive-stack .table-responsive-stack-thead {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .table-responsive-stack tr {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border-bottom: 3px solid #ccc;
+        display: block;
+    }
+
+    /*  IE9 FIX   */
+    .table-responsive-stack td {
+        float: left\9;
+        width: 100%;
+    }
+}
+
+.AllTabsDB {
+    font-size: 14px;
+    font-family: proxima_novaregular;
+}
+
+.ResReqTabContiner {
+    width: 100%;
+}
+
+.badge-light {
+    font-size: 14px;
+    font-family: proxima_novabold;
+}
+
+.dataTables_empty {
+    font-family: 'proxima_novasemibold';
+    font-size: 14px;
+    text-align: center;
+    opacity: .8;
+}
+
+.CoversionToUSD {
+    margin-bottom: 0px !important;
+}
+
+.CoversionToUSD .input-group-text {
+    font-size: 13px !important;
+    font-family: 'proxima_novabold';
+}
+
+/***********New Request form CSS ended**************/
+
+/***********Version-2 CSS Started**************/
+.chkbox {
+    float: left;
+    width: 8%;
+    border-radius: 0px;
+    border: none;
+    box-sizing: unset;
+    box-shadow: none !important;
+}
+
+.radiobutton {
+    vertical-align: middle;
+}
+
+#errorMessage p {
+    margin-bottom: 10px;
+    font-size: 14px !important;
+    font-family: proxima_novaregular !important;
+}
+
+#errorMessage p b {
+    font-family: proxima_novabold !important;
+    font-size: 14px;
+}
+
+/* #viewErrorPopup .alert {
+    background: transparent !important;
+}
+
+#viewErrorPopup .modal-body {
+    padding: 4px;
+}
+
+#viewErrorPopup .modal-footer {
+    padding: 0 10px 4px;
+} */
+
+#viewUpdatePopup .modal-dialog,
+#viewSuccessPopup .modal-dialog, #viewErrorPopup .modal-dialog, #fileConflictModal .modal-dialog {
+    max-width: 350px;
+}
+
+/* Expand the Width of the Popups */
+#InterviewerFBPopup .modal-dialog, #EditResourcePopup .modal-dialog {
+    overflow-y: initial !important
+}
+#InterviewerFBPopup .modal-body,  #EditResourcePopup .modal-body {
+    height: 70vh;
+    overflow-y: auto;
+}
+
+#viewErrorPopup .modal-header, #fileConflictModal .modal-header {
+    padding: 10px 5px 10px 10px;
+    background-color: #525e64;
+}
+
+#viewUpdatePopup .modal-header,
+#approveRejectSuccessPopup .modal-header,
+#PMApprovePopup .modal-header,
+#InterviewerSelectPopup .modal-header,
+#InterviewerNoShowPopup .modal-header,
+#PHeadApprovePopup .modal-header,
+#viewSuccessPopup .modal-header {
+    background-color: #009900;
+    min-height: 16px;
+    padding: 10px 5px 10px 10px;
+    border-bottom: 1px solid #009900;
+    display: block;
+}
+
+#viewCancelPopup .modal-header {
+    padding: 10px 5px 10px 10px;
+    background-color: #B3B6B7;
+}
+
+.close {
+    position: absolute;
+    right: 26px;
+    top: 14px;
+    width: 18px;
+    height: 18px;
+    opacity: 1 !important;
+    cursor: pointer;
+}
+
+.close:hover {
+    opacity: 1 !important;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 16px;
+    content: ' ';
+    height: 18px;
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.historyIcon {
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #495057;
+}
+
+.pagenote {
+    border-top: none !important;
+    margin-top: 0 !important;
+}
+
+body .viewNoteLink {
+    margin-top: 18px;
+    margin-bottom: 16px !important;
+}
+
+#viewCopyPRPopup .modal-header {
+    padding: 10px 5px 10px 10px;
+    background-color: #495057;
+}
+
+#copyPRRequestID {
+    font-weight: bold;
+}
+
+#viewVersionHistoryPopup .modal-content {
+    height: 402px;
+}
+
+#viewVersionHistoryPopup .modal-body {
+    padding-top: 6px;
+}
+
+#viewVersionHistoryPopup .modal-header {
+    padding: 10px 5px 10px 10px;
+    background-color: #ffffff;
+    /*background-color:#495057;*/
+}
+
+#viewVersionHistoryPopup .modal-header h5 {
+    color: #000000;
+}
+
+#viewVersionHistoryPopup .modal-lg {
+    max-width: 1024px;
+}
+
+#viewAddNotePopup .modal-header {
+    padding: 10px 5px 10px 10px;
+    background-color: #495057;
+}
+
+#viewVersionHistoryPopup .close:before,
+#viewVersionHistoryPopup .close:after {
+    background-color: #495057;
+}
+
+#versionHistory {
+    overflow: auto;
+    height: 300px;
+}
+
+#versionHistory img,
+svg {
+    display: none;
+}
+
+#versionHistoryTable {
+    width: 98%;
+}
+
+#versionHistoryTable td {
+    border: 1px solid #dee2e6;
+    text-align: left;
+    padding: 5px;
+}
+
+#versionHistoryTable th {
+    padding: 6px;
+    color: #495057;
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+}
+
+#versionHistoryTable table td {
+    border: none;
+}
+
+.ms-propertysheet {
+    font-weight: 600;
+}
+
+.iconContainer {
+    width: 60px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.ViewIcon:before {
+    content: "\f06e";
+    font: normal 14px FontAwesome;
+    display: inline-block;
+    color: #495057;
+    margin-right: 5px;
+}
+
+.fa-copynew {
+    cursor: pointer;
+}
+
+.EditIcon:before {
+    content: "\f040";
+    font: normal normal normal 15px FontAwesome;
+    color: #495057;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.CopyIcon:before {
+    content: "\f0c5";
+    font: normal normal normal 15px FontAwesome;
+    color: #495057;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.UploadIcon:before {
+    content: "\f08e";
+    font: normal normal normal 15px FontAwesome;
+    color: #444444;
+    font-weight: bold;
+}
+
+.ActionContainer {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.assignToDrpDwn {
+    background: #FFF5F5;
+    border-radius: 17px;
+    font-family: 'proxima_novasemibold';
+    font-size: 14px;
+    color: #ED1C24;
+    position: relative;
+    padding: 4px 14px 4px 7px;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.assignToDrpDwn:after {
+    content: "\f0d7";
+    font: normal normal normal 14px FontAwesome;
+    position: absolute;
+    right: 4px;
+    top: 7px;
+}
+
+.card {
+    background: #f8f9fa !important;
+    border: 1px solid #C7E0F4 !important
+}
+
+.formHeaderMain {
+    font-family: proxima_novabold !important;
+    font-size: 16px;
+}
+
+.accordion-button {
+    padding: 0.6rem 1.25rem;
+    background-color: #f8f9fa;
+    margin: 15px 0;
+    border-radius: 3px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f8f9fa !important;
+}
+
+.accordion-button:before {
+    width: 6px;
+    content: "";
+    background: #495057;
+    position: absolute;
+    left: -1px;
+    border-radius: 0 7px 7px 0;
+    min-height: 100%;
+}
+
+.accordion-button:after {
+    font-family: FontAwesome;
+    content: "\f067";
+    transition: transform .1s ease-in-out;
+    left: auto;
+    right: 1.38%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    position: absolute;
+    background-image: none;
+    color: #495057;
+}
+
+.accordion-button:not(.collapsed):after {
+    font-family: FontAwesome;
+    content: "\f068";
+    background-image: none;
+    transition: transform .1s ease-in-out;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #e7f1ff;
+}
+
+.iconpadding {
+    color: #495057;
+    font-size: 18px;
+}
+
+.card-title {
+    font-family: 'proxima_novabold';
+    font-size: 18px;
+}
+
+.lableDesign {
+    font-weight: bold;
+    margin-bottom: 5px !important;
+    font-size: 14px !important;
+    font-family: 'proxima_novaregular' !important;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.textalign {
+    text-align: right;
+}
+
+.removeButton {
+    line-height: 1 !important;
+    margin-left: 5px !important;
+    font-size: 11px !important;
+    padding: 3.75px 4.75px !important;
+}
+
+.col-xs-offset-right-9 {
+    margin-right: 75%;
+}
+
+.border-light-form {
+    background: none !important;
+}
+
+.card-header-form {
+    background-color: #eff6fc !important;
+}
+
+.border-top-form {
+    border-top: 1px solid #c7e0f4 !important;
+}
+
+.backgroundcolorgainsboro {
+    background-color: gainsboro;
+}
+
+.removeIcon {
+    margin-left: 0px !important;
+    vertical-align: top !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+}
+
+.listGroupNew {
+    height: 100px;
+    overflow: auto;
+}
+
+.listGrouIptemNew {
+    padding: 5px 5px 2px 8px !important;
+    border-width: 0px !important;
+}
+
+.marginright5px {
+    margin-right: 5px;
+}
+
+.lblHeader {
+    font-family: 'proxima_novabold';
+    font-size: 20px;
+}
+
+.prDropdown {
+    font-size: 14px !important;
+}
+
+.PRRDBButton {
+    margin: 0px 10px 0px 5px;
+}
+
+.prstatusupdatelist {
+    margin-top: 10px;
+    max-height: 170px;
+    overflow: auto;
+}
+
+.ulst {
+    margin-left: 1em;
+}
+
+.ulst li {
+    list-style-type: none !important;
+}
+
+.divreadonly {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+.margintop120px {
+    margin-top: 120px;
+}
+
+.questionmark {
+    font-size: 200px;
+    color: #495057;
+}
+
+/* Overwrite datepicker css */
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active.disabled:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active[disabled] {
+    background-color: #495057 !important;
+}
+
+.novabold {
+    font-family: 'proxima_novabold' !important;
+}
+
+.text-mutedprstatus {
+    --bs-text-opacity: 1;
+    color: #212529 !important;
+}
+
+.displayNone {
+    display: none !important;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active:hover {
+    background-color: #006dcc;
+    background-image: -moz-linear-gradient(to bottom, #08c, #04c);
+    background-image: -ms-linear-gradient(to bottom, #08c, #04c);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08c), to(#04c));
+    background-image: -webkit-linear-gradient(180deg, #08c, #04c);
+    background-image: -o-linear-gradient(to bottom, #08c, #04c);
+    background-image: linear-gradient(180deg, #495057, #495057) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#08c", endColorstr="#0044cc", GradientType=0);
+    border-color: #04c #04c #002a80;
+    border-color: rgba(0, 0, 0, .1) rgba(0, 0, 0, .1) rgba(0, 0, 0, .25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+}
+
+.text-divider {
+    margin: 2em 0;
+    line-height: 0;
+    text-align: center;
+    font-size: 12px !important;
+    font-family: proxima_novaregular !important;
+}
+
+.text-divider span {
+    background-color: #f5f5f5;
+    padding: 1em;
+}
+
+.text-divider:before {
+    content: " ";
+    display: block;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.accordion-body.nopadding {
+    padding: 0px;
+}
+
+.borderboxline {
+    border: 1px solid #C7E0F4;
+}
+
+.HorizontalLine {
+    display: flex;
+    align-items: center;
+    font-family: proxima_novabold !important;
+    font-size: 16px;
+}
+
+.HorizontalLine:after {
+    content: '';
+    flex: auto;
+    margin-left: 10px;
+    border-top: 1px solid #C7E0F4;
+}
+
+.accordion-item {
+    margin: 0px 10px;
+}
+
+.card-body {
+    padding: 10px !important;
+}
+
+.btnHome {
+    padding: 0px !important;
+    box-shadow: none !important;
+}
+
+.dataTables_filter {
+    margin-top: 5px !important;
+    margin-right: 8px;
+}
+
+input[type="search"] {
+    border: 0px;
+    border-bottom: 2px solid #495057;
+}
+
+.btn:first-child:active {
+    color: #3ab0d8;
+    background-color: #3ab0d8;
+    border-color: #3ab0d8;
+}
+
+.p-2 {
+    cursor: pointer;
+}
+
+.dataTables_length {
+    display: none;
+}
+
+.dataTables_paginate>span {
+    display: inline;
+}
+
+.paginate_button.previous:before {
+    content: "";
+}
+
+.paginate_button.next:before {
+    content: "";
+}
+
+.paginate_button.current {
+    background-color: #3ab0d8 !important;
+    border-color: #3ab0d8 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #fff;
+    border: 1px solid #C6CBD4;
+    border-radius: 2px;
+    padding: 4px 12px;
+    margin: 0;
+    color: #000 !important;
+    text-decoration: none;
+    cursor: pointer;
+    font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background: #fff;
+    border: 1px solid #C6CBD4;
+    border-radius: 2px;
+    padding: 4px 12px;
+    margin: 0;
+    color: #000 !important;
+    text-decoration: none;
+    cursor: pointer;
+    font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif !important;
+
+}
+
+.paginate_button.previous.disabled {
+    color: #6c757d !important;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.paginate_button.next.disabled {
+    color: #6c757d !important;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+#lblContentRe-Open {
+    float: left;
+    margin-right: 40px;
+}
+
+#ddlRe-Open {
+    width: 178px;
+}
+
+.add_Scroll {
+    height: 304px;
+    overflow-y: scroll;
+    padding-right: 14px;
+}
+
+/*New version of loader*/
+.loadercontainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+.newloader {
+    height: 20px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.loader--dot {
+    animation-name: loader;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+}
+
+.loader--dot:first-child {
+    background-color: #8cc759;
+    animation-delay: 0.5s;
+}
+
+.loader--dot:nth-child(2) {
+    background-color: #8c6daf;
+    animation-delay: 0.4s;
+}
+
+.loader--dot:nth-child(3) {
+    background-color: #ef5d74;
+    animation-delay: 0.3s;
+}
+
+.loader--dot:nth-child(4) {
+    background-color: #f9a74b;
+    animation-delay: 0.2s;
+}
+
+.loader--dot:nth-child(5) {
+    background-color: #60beeb;
+    animation-delay: 0.1s;
+}
+
+.loader--dot:nth-child(6) {
+    background-color: #fbef5a;
+    animation-delay: 0s;
+}
+
+.loader--text {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    right: 0;
+    width: 4rem;
+    margin: auto;
+}
+
+.loader--text:after {
+    content: "Loading";
+    font-family: proxima_novabold !important;
+    font-size: 24px;
+    color: #fff;
+    animation-name: loading-text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+    15% {
+        transform: translateX(0);
+    }
+
+    45% {
+        transform: translateX(230px);
+    }
+
+    65% {
+        transform: translateX(230px);
+    }
+
+    95% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes loading-text {
+    0% {
+        content: "Loading";
+    }
+
+    25% {
+        content: "Loading.";
+    }
+
+    50% {
+        content: "Loading..";
+    }
+
+    75% {
+        content: "Loading...";
+    }
+}
+
+.DeleteIcon:before {
+    content: "\f014";
+    font: normal normal normal 15px FontAwesome;
+    color: #495057;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.CalendarIcon:before {
+    content: "\f073";
+    font: normal normal normal 15px FontAwesome;
+    color: #495057;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.StatusIcon:before {
+    content: "\f013";
+    font: normal normal normal 15px FontAwesome;
+    color: #495057;
+    display: inline-block;
+    margin-right: 5px;
+}
