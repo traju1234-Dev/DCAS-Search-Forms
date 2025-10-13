@@ -1,13 +1,12 @@
 import { WebPartContext } from "@microsoft/sp-webpart-base";
-import { IAppraisalFormData } from "./Appraisals";
+//import { IAppraisalFormData } from "./Appraisals";
 
-export interface IAppraisalsProps {
+export interface IAppraisalsProps<T = Record<string, any>> {
     context: WebPartContext;
     mode: string; 
     reqID: number; 
     libName: string;
     siteAbsoluteURL: string;
-    onFormDataChange?: (data: IAppraisalFormData) => void;
+    onFormDataChange?: (metadata: Record<string, any>, isValid: boolean) => void;
     isSubmitTriggered?: boolean;
-
 }

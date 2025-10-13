@@ -157,41 +157,23 @@ export default class DataService {
         );
     }
 
-    //Get Formatted Date
-    public getFormattedDate(InputDate: any, applyFormat: boolean): string {
-        let fdate;
+    public getFormattedDate(inputDate: any, applyFormat: boolean): string {
+        if (!inputDate) return "";
+
+        const date = new Date(inputDate);
+        if (isNaN(date.getTime())) return "";
+
+        const day = date.getDate().toString().padStart(2, "0");
+        const month = (date.getMonth() + 1).toString().padStart(2, "0");
+        const year = date.getFullYear();
         const monthShortNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        if (InputDate !== null && InputDate !== "" && InputDate !== undefined) {
-            //Get the Full Year        
-            const InputYear = InputDate.getFullYear();
+        const monthShort = monthShortNames[date.getMonth()];
 
-            let InputMonth = (1 + InputDate.getMonth()).toString();
-            InputMonth = InputMonth.length > 1 ? InputMonth : '0' + InputMonth;
+        let formattedDate = applyFormat
+            ? `${day}-${monthShort}-${year}`   // e.g., 12-Oct-2025
+            : `${month}/${day}/${year}`;       // e.g., 10/12/2025
 
-            let InputMonthFormat = monthShortNames[InputDate.getMonth()];
-            InputMonthFormat = InputMonthFormat.length > 1 ? InputMonthFormat : '0' + InputMonthFormat;
-            //Get the Day
-            let InputDay = InputDate.getDate().toString();
-            InputDay = InputDay.length > 1 ? InputDay : '0' + InputDay;
-
-            //Get the Month
-            if (applyFormat) {
-                //Fomat Date    01-Jan-2024
-                fdate = InputDay + '-' + InputMonthFormat + '-' + InputYear;
-            }
-            else {
-                //Fomat Date  01/01/2024
-                fdate = InputMonth + '/' + InputDay + '/' + InputYear;
-            }
-
-            if (fdate === "01/01/1970")
-                return "";
-            else
-                return fdate;
-        }
-        else {
-            return "";
-        }
+        return formattedDate === "01/01/1970" ? "" : formattedDate;
     }
 
     //This function validate Query String or not **/

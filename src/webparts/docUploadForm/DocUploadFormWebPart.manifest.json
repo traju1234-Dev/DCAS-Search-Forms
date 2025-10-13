@@ -3,6 +3,7 @@
   "id": "be0a7a2e-4201-43d0-af96-a8855d6d3fec",
   "alias": "DocUploadFormWebPart",
   "componentType": "WebPart",
+  "supportsFullBleed": true,
 
   // The "*" signifies that the version should be taken from the package.json
   "version": "*",

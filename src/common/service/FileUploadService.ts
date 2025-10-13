@@ -1,5 +1,4 @@
 import { sp } from "@pnp/sp";
-import { IAppraisalFormData } from "../../webparts/docUploadForm/components/appraisalForm/Appraisals";
 
 export interface IAttachmentFileInfo {
   name: string;
@@ -20,25 +19,83 @@ export default class FileUploadService {
 
     sp.setup({ sp: { baseUrl: this.siteUrl } });
   }
-
-  public async uploadFiles( files: IAttachmentFileInfo[], metadata?: IAppraisalFormData, shouldResolveConflicts: boolean = false ): Promise<boolean> {
+  public async uploadFiles( files: IAttachmentFileInfo[], FormsMetadata?: { metadata: Record<string, any>, isValid: boolean }, shouldResolveConflicts: boolean = false, itemId?: number ): Promise<boolean> {
     const { year, month } = this.getCurrentYearMonth();
     const folderUrl = `${this.serverRelativeSiteUrl}/${this.libraryName}/${year}/${month}`;
+
     await this.ensureFolderPathExists(folderUrl);
     const finalFiles = shouldResolveConflicts ? await this.resolveNameConflicts(files, folderUrl) : files;
+
     let uploadedCount = 0;
+
     for (const file of finalFiles) {
       try {
-        const uploadedFile = await this.uploadSingleFile(folderUrl, file);
-        await this.updateMetadata(uploadedFile.data.ServerRelativeUrl, file.name, metadata);
+        if (typeof itemId === "number" && itemId > 0) {
+          // ✅ Get existing item and file reference
+          const item = await sp.web.lists .getByTitle(this.libraryName) .items.getById(itemId) .select("ID", "FileLeafRef", "FileRef") .get();       
+          const existingFileUrl = item.FileRef;
+          // ✅ Overwrite existing file content
+          await sp.web.getFileByServerRelativeUrl(existingFileUrl).setContent(file.content);
+         
+          // ✅ Update metadata regardless of file name match
+          await sp.web.lists.getByTitle(this.libraryName).items.getById(itemId).update(FormsMetadata?.metadata ?? {});
+        } else {
+          // ✅ Create mode: upload and update metadata
+          const uploadedFile = await this.uploadSingleFile(folderUrl, file);
+         console.log(uploadedFile.data.ServerRelativeUrl);
+
+          await this.updateMetadata(uploadedFile.data.ServerRelativeUrl, file.name, FormsMetadata?.metadata);
+        }
         uploadedCount++;
       } catch (error) {
-        console.error("Error uploading file:", file.name, error);
+        console.error("Error uploading or updating file:", file.name, error);
         throw error;
       }
     }
+
     return uploadedCount === finalFiles.length;
   }
+
+
+  // public async uploadFiles( files: IAttachmentFileInfo[], FormsMetadata?: { metadata: Record<string, any>, isValid: boolean }, shouldResolveConflicts: boolean = false, itemId?: number): Promise<boolean> {
+  //   const { year, month } = this.getCurrentYearMonth();
+  //   const folderUrl = `${this.serverRelativeSiteUrl}/${this.libraryName}/${year}/${month}`;
+
+  //   await this.ensureFolderPathExists(folderUrl);
+
+  //   const finalFiles = shouldResolveConflicts ? await this.resolveNameConflicts(files, folderUrl) : files;
+  //   let uploadedCount = 0;
+
+  //   for (const file of finalFiles) {
+  //     try {
+  //       if (typeof itemId === "number" && itemId > 0) {            
+  //         // ✅ Replace file for existing item
+  //         const item = await sp.web.lists.getByTitle(this.libraryName).items.getById(itemId).select("ID", "FileLeafRef", "FileRef").get(); 
+  //         console.log(item);       
+  //         const isFileNameMatched = file.name.toLowerCase() === item.FileLeafRef.toLowerCase();
+  //         if(isFileNameMatched) {            
+  //           // ✅ Update metadata for existing item
+  //           await sp.web.lists.getByTitle(this.libraryName).items.getById(itemId).update(FormsMetadata?.metadata ?? {});
+  //         } else {              
+  //           // Delete existing file
+  //           await sp.web.getFileByServerRelativeUrl(item.FileRef).delete();
+
+  //           // Upload new file to same folder
+  //           const uploadedFile = await this.uploadSingleFile(folderUrl, file);
+  //           await this.updateMetadata(uploadedFile.data.ServerRelativeUrl, file.name, FormsMetadata?.metadata);
+  //         }
+  //       }
+  //       const uploadedFile = await this.uploadSingleFile(folderUrl, file);
+  //       console.log(uploadedFile.data.ServerRelativeUrl);
+  //       await this.updateMetadata(uploadedFile.data.ServerRelativeUrl, file.name, FormsMetadata?.metadata);
+  //       uploadedCount++;
+  //     } catch (error) {
+  //       console.error("Error uploading file:", file.name, error);
+  //       throw error;
+  //     }
+  //   }
+  //   return uploadedCount === finalFiles.length;
+  // }
 
   private async uploadSingleFile(folderUrl: string, file: IAttachmentFileInfo): Promise<any> {
     const folder = sp.web.getFolderByServerRelativeUrl(folderUrl);
@@ -49,6 +106,25 @@ export default class FileUploadService {
       return await folder.files.addChunked(file.name, blob);
     }
   }
+
+  private async updateMetadata( fileUrl: string, originalName: string, metadata?: Record<string, any> ): Promise<void> {
+    try {
+      const item = await sp.web.getFileByServerRelativeUrl(fileUrl).getItem();
+      const updatePayload: Record<string, any> = {
+        Title: originalName
+      };
+
+      if (metadata) {
+        for (const [key, value] of Object.entries(metadata)) {
+          updatePayload[key] = value;
+        }
+      }
+
+      await item.update(updatePayload);
+    } catch (error) {
+      console.warn("Metadata update failed for:", fileUrl, error);
+    }
+  } 
 
   private async ensureFolderPathExists(folderUrl: string): Promise<void> {
     const baseFolder = `${this.serverRelativeSiteUrl}/${this.libraryName}`;
@@ -67,10 +143,7 @@ export default class FileUploadService {
     }
   }
 
-  public async resolveNameConflicts(
-    files: IAttachmentFileInfo[],
-    folderUrl: string
-  ): Promise<IAttachmentFileInfo[]> {
+  public async resolveNameConflicts( files: IAttachmentFileInfo[], folderUrl: string ): Promise<IAttachmentFileInfo[]> {
     for (const file of files) {
       const filePath = `${folderUrl}/${file.name}`;
       const exists = await this.checkFileExists(filePath);
@@ -99,29 +172,7 @@ export default class FileUploadService {
     }
   }
 
-  private async updateMetadata(
-    fileUrl: string,
-    originalName: string,
-    metadata?: IAppraisalFormData
-  ): Promise<void> {
-    try {
-      const item = await sp.web.getFileByServerRelativeUrl(fileUrl).getItem();
-      const updatePayload: any = {
-        Title: originalName
-      };
 
-      if (metadata) {
-        updatePayload.BBL = metadata.BBL;
-        updatePayload.Boro = metadata.Boro;
-        updatePayload.Block = metadata.Block;
-        updatePayload.Lot = metadata.BBL; // Corrected from metadata.BBL
-      }
-
-      await item.update(updatePayload);
-    } catch (error) {
-      console.warn("Metadata update failed for:", fileUrl, error);
-    }
-  }
 
   public generateUniqueFileName(originalName: string): string {
     const parts = originalName.split(".");
@@ -132,7 +183,7 @@ export default class FileUploadService {
   }
 
   private uuidv4(): string {
-    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, c => {
       const r = (Math.random() * 16) | 0;
       const v = c === "x" ? r : (r & 0x3) | 0x8;
       return v.toString(16);
@@ -147,10 +198,7 @@ export default class FileUploadService {
     };
   }
 
-  public async detectConflicts(
-    files: IAttachmentFileInfo[],
-    libraryURL: string
-  ): Promise<IAttachmentFileInfo[]> {
+  public async detectConflicts( files: IAttachmentFileInfo[], libraryURL: string ): Promise<IAttachmentFileInfo[]> {
     const { year, month } = this.getCurrentYearMonth();
     const folderUrl = `${libraryURL}/${year}/${month}`;
     const conflictingFiles: IAttachmentFileInfo[] = [];
@@ -159,17 +207,15 @@ export default class FileUploadService {
       const filePath = `${folderUrl}/${file.name}`;
       try {
         const fileInfo = await sp.web.getFileByServerRelativeUrl(filePath).select("Exists")();
-        if (fileInfo.Exists) {
-          file.isFileExists = true;
+        file.isFileExists = fileInfo.Exists;
+        if (file.isFileExists) {
           conflictingFiles.push(file);
-        } else {
-          file.isFileExists = false;
         }
-      } catch {
+      } catch (error) {
+        console.warn("Error checking file existence:", filePath, error);
         file.isFileExists = false;
       }
     }
-
     return conflictingFiles;
   }
 }
