@@ -1,6 +1,6 @@
 import * as React from "react";
 import { sp } from "@pnp/sp";
-import { IAppraisalsProps } from "../appraisalForm/IAppraisalsProps";
+import { IGeneralDocsProps } from "../IGeneralDocsProps";
 
 export interface IBuildingDrawingsComponentState {
     isDisabled: boolean;
@@ -18,8 +18,8 @@ export interface IBuildingDrawingsData extends IBuildingDrawingsComponentState {
     metadata?: Record<string, any>;
 }
 
-export default class BuildingDrawingsComponent extends React.Component<IAppraisalsProps, IBuildingDrawingsComponentState> {
-    constructor(props: IAppraisalsProps) {
+export default class BuildingDrawingsComponent extends React.Component<IGeneralDocsProps, IBuildingDrawingsComponentState> {
+    constructor(props: IGeneralDocsProps) {
         super(props);
         sp.setup({ sp: { baseUrl: this.props.siteAbsoluteURL } });
         this.state = {
@@ -53,7 +53,7 @@ export default class BuildingDrawingsComponent extends React.Component<IAppraisa
         ($('.infoCircle-bottom') as any).tooltip("dispose");
     }
 
-    public componentDidUpdate(prevProps: IAppraisalsProps): void {
+    public componentDidUpdate(prevProps: IGeneralDocsProps): void {
         if (this.props.isSubmitTriggered && !prevProps.isSubmitTriggered) {
             this.validateAndSendData();
         }
@@ -124,7 +124,7 @@ export default class BuildingDrawingsComponent extends React.Component<IAppraisa
         return metadata;
     }
 
-    public render(): React.ReactElement<IAppraisalsProps> {
+    public render(): React.ReactElement<IGeneralDocsProps> {
         const { isDisabled, isLoading } = this.state;
         if (isLoading) {
             return <div>Loading...</div>;

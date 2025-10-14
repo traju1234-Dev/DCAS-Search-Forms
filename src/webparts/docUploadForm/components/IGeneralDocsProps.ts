@@ -1,6 +1,6 @@
 import { WebPartContext } from "@microsoft/sp-webpart-base";
 
-export interface IAppraisalsProps<T = Record<string, any>> {
+export interface IGeneralDocsProps<T = Record<string, any>> {
     context: WebPartContext;
     mode: string; 
     reqID: number; 

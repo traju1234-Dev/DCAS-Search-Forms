@@ -1,6 +1,6 @@
 import * as React from "react";
 import { sp } from "@pnp/sp";
-import { IAppraisalsProps } from "./IAppraisalsProps";
+import { IGeneralDocsProps } from "../IGeneralDocsProps";
 import DataService from "../../../../common/service/DataService";
 
 export interface IAppraisalsState {
@@ -43,9 +43,9 @@ export interface IAppraisalFormData extends IAppraisalsState {
     metadata?: Record<string, any>;
 }
 
-export default class Appraisals extends React.Component<IAppraisalsProps, IAppraisalsState> {   
+export default class Appraisals extends React.Component<IGeneralDocsProps, IAppraisalsState> {   
     private dataService: DataService; 
-    constructor(props: IAppraisalsProps) {        
+    constructor(props: IGeneralDocsProps) {        
         super(props);
         //set up spsite URL
         sp.setup({ sp: { baseUrl: this.props.siteAbsoluteURL } });
@@ -140,7 +140,7 @@ export default class Appraisals extends React.Component<IAppraisalsProps, IAppra
         }
     }
 
-    public componentDidUpdate(prevProps: IAppraisalsProps,  prevState: IAppraisalsState): void {
+    public componentDidUpdate(prevProps: IGeneralDocsProps,  prevState: IAppraisalsState): void {
         // if (this.state.AppraisalDt !== prevState.AppraisalDt) {
         //     ($('#DTAppraisal') as any).datepicker('update', this.state.AppraisalDt);
         // }
@@ -272,7 +272,7 @@ export default class Appraisals extends React.Component<IAppraisalsProps, IAppra
         return metadata;
     }
 
-    public render(): React.ReactElement<IAppraisalsProps> {
+    public render(): React.ReactElement<IGeneralDocsProps> {
         const { isDisabled, isLoading } = this.state;
         if (isLoading) {
             return <div>Loading...</div>;

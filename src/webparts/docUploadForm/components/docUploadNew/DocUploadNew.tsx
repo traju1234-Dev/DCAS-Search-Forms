@@ -111,13 +111,11 @@ export default class DocUploadNew extends React.Component <DocUploadNewProps, Do
                         <i title="${file.name}" class='closeIcon RemoveUploadedFiles'></i>
                     </li>
                 `).join("");
-
-            //  <li className='attchedFile'>
-        //          <span className="fileName" title={file.Name}>
-        //              <a href={this.props.context.pageContext.web.absoluteUrl + '/_layouts/15/download.aspx?SourceUrl=' + file.FileRef} data-toggle="tooltip" title={file.Name}>{file.Name}</a>
-    //              </span>
-//              </li>;
-                                            
+                //  <li className='attchedFile'>
+                //      <span className="fileName" title={file.Name}>
+                //          <a href={this.props.context.pageContext.web.absoluteUrl + '/_layouts/15/download.aspx?SourceUrl=' + file.FileRef} data-toggle="tooltip" title={file.Name}>{file.Name}</a>
+                //      </span>
+                //  </li>;                                         
 
                 $('#divUploadedAttachments ul').html(uploadedQuotesFileHTML);
                 //$('#GeneralDragDropID').html("<mark>Drag & Drop or </mark><span>Browse</span><mark>your file here</mark>");
