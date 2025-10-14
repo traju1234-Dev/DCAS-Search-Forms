@@ -6,7 +6,7 @@ $(document).ready(function() {
 	}); 
     
 	let flag=false;    
-	// Create form tooltip show/d-none
+	// Create form tooltip show/d-none	
 	$(".infoIcon").on("click",function(){
         flag=true;
 		if($(this).parent().find(".infoTooltip").hasClass("d-none")) {

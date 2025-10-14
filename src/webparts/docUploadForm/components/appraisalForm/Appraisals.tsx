@@ -84,32 +84,29 @@ export default class Appraisals extends React.Component<IAppraisalsProps, IAppra
             isLoading: false
         };
     }
-
-    // public async componentDidMount(): Promise<void> {
-    //     this.dataService = new DataService(this.context, this.props.context.pageContext.web.absoluteUrl);
-    //     this.bindDates();
-    //     const { reqID, mode, libName} = this.props;
-    //     if (reqID && (mode === "edit" || mode === "view")) {
-    //         this.setState({ isLoading: true, isDisabled: mode === "view" });
-    //         this.fetchAppraisalData(reqID, libName);
-    //     } else {
-    //         this.setState({ isDisabled: false }); // create mode
-    //     }
-    // }
+    
     public async componentDidMount(): Promise<void> {
         this.dataService = new DataService(this.context, this.props.context.pageContext.web.absoluteUrl);        
         const { reqID, mode, libName } = this.props;
         if (reqID && (mode === "edit" || mode === "view")) {
             this.setState({ isLoading: true, isDisabled: mode === "view" });
             await this.fetchAppraisalData(reqID, libName);
-            this.bindDates(); // Rebind after data is loaded
+            this.bindDates();
         } else {
-            this.setState({ isDisabled: false }); // create mode
-            this.bindDates(); // Bind immediately for create mode
+            //Create Mode
+            this.setState({ isDisabled: false });
+            this.bindDates(); 
         }
+        ($('.infoCircle-bottom') as any).tooltip({
+            placement: 'bottom',
+            trigger: "hover"
+        });
     }
 
-    /** Enable datepicker control where ever date fields are applicable **/  
+    public componentWillUnmount(): void {
+        ($('.infoCircle-bottom') as any).tooltip("dispose");
+    }
+   
     private bindDates(): void {
         const dateFields: { id: string; key: keyof IAppraisalsState }[] = [
             { id: 'DTAppraisal', key: 'AppraisalDt' },
@@ -121,7 +118,6 @@ export default class Appraisals extends React.Component<IAppraisalsProps, IAppra
     
     private initializeDatePicker<T extends keyof IAppraisalsState>(elementId: string, stateKey: T): void {
         const selector = `#${elementId}`;
-
         if ($(selector).length === 0) {
             console.warn(`Element not found: ${selector}`);
             return;
@@ -132,14 +128,11 @@ export default class Appraisals extends React.Component<IAppraisalsProps, IAppra
             autoclose: true,
             todayHighlight: true,
             startDate: new Date()
-        }).on('changeDate', () => {
-            console.log("Date selected via calendar");
+        }).on('changeDate', () => {          
             const selectedDate = ($(selector) as any).datepicker('getDate');
-            const formattedDate = this.dataService.getFormattedDate(selectedDate, false);
-            //this.setState({ [stateKey]: formattedDate } as Pick<IAppraisalsState, T>);
+            const formattedDate = this.dataService.getFormattedDate(selectedDate, false);         
             this.changeTextValue(formattedDate, stateKey);
-        });
-        
+        });        
         // Update the datepicker with current state value
         const currentValue = this.state[stateKey];
         if (currentValue) {
@@ -148,9 +141,9 @@ export default class Appraisals extends React.Component<IAppraisalsProps, IAppra
     }
 
     public componentDidUpdate(prevProps: IAppraisalsProps,  prevState: IAppraisalsState): void {
-        if (this.state.AppraisalDt !== prevState.AppraisalDt) {
-            ($('#DTAppraisal') as any).datepicker('update', this.state.AppraisalDt);
-        }
+        // if (this.state.AppraisalDt !== prevState.AppraisalDt) {
+        //     ($('#DTAppraisal') as any).datepicker('update', this.state.AppraisalDt);
+        // }
         if (this.props.isSubmitTriggered && !prevProps.isSubmitTriggered) {
             this.validateAndSendData();
         }
@@ -159,7 +152,6 @@ export default class Appraisals extends React.Component<IAppraisalsProps, IAppra
     private async fetchAppraisalData(reqID: number, libraryName: string): Promise<void> {
         this.setState({ isLoading: true });
         sp.setup({ sp: { baseUrl: this.props.siteAbsoluteURL } });
-
         try {
             const item = await sp.web.lists
                 .getByTitle(libraryName)

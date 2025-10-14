@@ -25,7 +25,7 @@ import '../../../assets/css/DCAS-Custom.css';
 // Import JS
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js';
-import '../../../assets/js/DCAS-Custom.js';
+//import '../../../assets/js/DCAS-Custom.js';
 
 // Load external CSS (e.g., Font Awesome)
 SPComponentLoader.loadCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');

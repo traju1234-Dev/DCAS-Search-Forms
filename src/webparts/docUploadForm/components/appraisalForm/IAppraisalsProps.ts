@@ -1,5 +1,4 @@
 import { WebPartContext } from "@microsoft/sp-webpart-base";
-//import { IAppraisalFormData } from "./Appraisals";
 
 export interface IAppraisalsProps<T = Record<string, any>> {
     context: WebPartContext;

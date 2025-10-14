@@ -87,7 +87,7 @@ export default class DocUploadNew extends React.Component <DocUploadNewProps, Do
     
     public async componentDidMount(): Promise<void> {
         const selectedDocCategory = this.state.selectedDocCategory;
-        if (this.props.viewType.toLowerCase() === "edit") {
+        if (this.props.viewType.toLowerCase() === "edit" || this.props.viewType.toLowerCase() === "view") {
             try {
                 sp.setup({ sp: { baseUrl: this.state.siteAbsoluteURL } });
                 const listItem = await sp.web.lists .getByTitle(selectedDocCategory).items.getById(this.props.requestId).select("ID", "FileLeafRef").get();
@@ -112,15 +112,30 @@ export default class DocUploadNew extends React.Component <DocUploadNewProps, Do
                     </li>
                 `).join("");
 
+            //  <li className='attchedFile'>
+        //          <span className="fileName" title={file.Name}>
+        //              <a href={this.props.context.pageContext.web.absoluteUrl + '/_layouts/15/download.aspx?SourceUrl=' + file.FileRef} data-toggle="tooltip" title={file.Name}>{file.Name}</a>
+    //              </span>
+//              </li>;
+                                            
+
                 $('#divUploadedAttachments ul').html(uploadedQuotesFileHTML);
-                $('#GeneralDragDropID').html("<mark>Drag & Drop or </mark><span>Browse</span><mark>your file here</mark>");
-                $('#idNomDocUploadExtra1').css('display', 'block');
+                //$('#GeneralDragDropID').html("<mark>Drag & Drop or </mark><span>Browse</span><mark>your file here</mark>");
+                //$('#idNomDocUploadExtra1').css('display', 'block');
                 $('#divUploadedAttachments').removeClass('d-none');
                 this.setupRemoveHandler();
             } catch (error) {
                 console.error("Error loading existing files:", error);
             }
         }
+        ($('.infoCircle-bottom') as any).tooltip({
+            placement: 'bottom',
+            trigger: "hover"
+        });
+    }
+
+    public componentWillUnmount(): void {
+        ($('.infoCircle-bottom') as any).tooltip("dispose");
     }
         
     private async UploadAttachments(event: React.ChangeEvent<HTMLInputElement>) {
@@ -145,8 +160,8 @@ export default class DocUploadNew extends React.Component <DocUploadNewProps, Do
             `;
             this.setState({ attachmentFilesInfo: newFile });
             $('#divUploadedAttachments ul').html(uploadedQuotesFileHTML);
-            $('#GeneralDragDropID').html("<mark>Drag & Drop or </mark><span>Browse</span><mark>your file here</mark>");
-            $('#idNomDocUploadExtra1').css('display', 'block');
+            //$('#GeneralDragDropID').html("<mark>Drag & Drop or </mark><span>Browse</span><mark>your file here</mark>");
+            //$('#idNomDocUploadExtra1').css('display', 'block');
             $('#divUploadedAttachments').removeClass('d-none');
             this.setupRemoveHandler();
         };
@@ -334,11 +349,11 @@ export default class DocUploadNew extends React.Component <DocUploadNewProps, Do
                             <i className="fa-solid fa-calendar-days iconpadding"/> Requester Information
                         </button>
                     </h2>
-                    <div id="ReqInfoSection" className="accordion-collapse collapse show" aria-spanledby="ReqInfoContainer">
+                    <div id="ReqInfoSection" className="accordion-collapse collapse show" aria-labelledby="ReqInfoContainer">
                         <div className="accordion-body nopadding">                           
                             <div className="form-group row">
                                 <div className="col-md-6 col-lg-6 col-xs-12">
-                                    <span className="lblContent">Requester Name<span className="manadatory"/><span data-toggle="tooltip" className="infoCircle-bottom" title="Please Enter Requester Details"><i className="fa fa-info-circle infoIcon"/></span></span>
+                                    <span className="lblContent">Requester Name<span className="mandatory"/><span data-toggle="tooltip" className="infoCircle-bottom" title="Please Enter Requester Details"><i className="fa fa-info-circle infoIcon"/></span></span>
                                     <PeoplePicker
                                         context={{
                                             msGraphClientFactory: context.msGraphClientFactory,
@@ -355,7 +370,7 @@ export default class DocUploadNew extends React.Component <DocUploadNewProps, Do
                                    />
                                 </div>
                                  <div className="col-md-6 col-lg-6 col-xs-12">
-                                    <span className="lblContent">Document Category<span className="manadatory">*</span><span data-toggle="tooltip" className="infoCircle-bottom" title="Select document category "><i className="fa fa-info-circle infoIcon"/></span></span>
+                                    <span className="lblContent">Document Category<span className="mandatory">*</span><span data-toggle="tooltip" className="infoCircle-bottom" title="Select document category "><i className="fa fa-info-circle infoIcon"/></span></span>
                                     <select className="form-select prDropdown" disabled={this.state.isDoclibDropdownDisabled} id="ddlDocCategory" value={this.state.selectedDocCategory} onChange={(e) => this.changeTextValue(e.target.value, "selDocCategory")} >
                                         <option value="">--Select--</option>
                                             {this.props.docCategories.map((category, key) => (
@@ -390,7 +405,6 @@ export default class DocUploadNew extends React.Component <DocUploadNewProps, Do
                         </div>                
                     </div>
                 }
-
                 <div className="accordion-item border-0" id="AttachmentContainer">
                     <h2 className="accordion-header" >
                         <button className="accordion-button formHeaderMain" type="button" data-bs-toggle="collapse" data-bs-target="#AttachInfoSection" aria-expanded="false" aria-controls="AttachInfoSection">
@@ -400,10 +414,10 @@ export default class DocUploadNew extends React.Component <DocUploadNewProps, Do
                     <div id="AttachInfoSection" className="accordion-collapse collapse show" aria-spanledby="AttachmentContainer">
                         <div className="accordion-body card-body nopadding">
                             <div className="form-group row">                            
-                                <div className="col-md-6 col-lg-6 col-xs-12">
-                                    <div className="form-group required" id="ResReqFileUpload">
+                                <div className="col-md-6 col-lg-6 col-xs-12" id="ResReqFileUpload">
+                                    <div className="form-group required">
                                         <div className="upload">
-                                            <input type="file" id="uploadAttachments" onChange={this.UploadAttachments.bind(this)} />
+                                            <input type="file" onChange={this.UploadAttachments.bind(this)} />
                                             <p id="GeneralDragDropID" className="dragDropLbl">
                                                 <mark>Drag & Drop or </mark>
                                                 <span>Browse</span>
@@ -443,7 +457,7 @@ export default class DocUploadNew extends React.Component <DocUploadNewProps, Do
                         <div className="btn-group" role="group" aria-span="Third group">
                             <button onClick={this.BackToDashboard} className={`btn btnPrimaryBlue ${this.state.isFormDisable ? 'd-none' : ''}`}>Cancel</button>
                         </div>                        
-                        <div className="btn-group" role="group" aria-span="First group">
+                        <div className="btn-group d-none" role="group" aria-span="First group">
                             <button onClick={this.handleDraftClick} className={`btn btnPrimaryBlue ${this.state.isFormDisable ? 'd-none' : ''}`}>Save as Draft</button>
                         </div>
                         <div className="btn-group" role="group" aria-span="Second group">
