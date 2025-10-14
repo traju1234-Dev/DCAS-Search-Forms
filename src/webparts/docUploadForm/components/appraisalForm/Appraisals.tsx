@@ -350,15 +350,15 @@ export default class Appraisals extends React.Component<IGeneralDocsProps, IAppr
                 <div className="form-group row">                   
                     <div className="col-md-4 col-lg-4 col-xs-12">
                         <span className="lblContent">Fixed Asset Number <span className="mandatory"/><span data-toggle="tooltip" className="infoCircle-bottom" title="Please Enter Appraiser Reason"><i className="fa fa-info-circle infoIcon"/></span></span>
-                        <input type="text" className="form-control" disabled={isDisabled} onChange={(e) => this.changeTextValue(e.target.value, "FixedAssetNo")} value={this.state.FixedAssetNo} id="txtAppraiserReason" placeholder='Enter Fixed Asset Number' />
+                        <input type="text" className="form-control" disabled={isDisabled} onChange={(e) => this.changeTextValue(e.target.value, "FixedAssetNo")} value={this.state.FixedAssetNo} id="txtFixedAssetNo" placeholder='Enter Fixed Asset Number' />
                     </div>
                     <div className="col-md-4 col-lg-4 col-xs-12">
                         <span className="lblContent">Floor <span className="mandatory"/><span data-toggle="tooltip" className="infoCircle-bottom" title="Please Enter Appraiser Reason"><i className="fa fa-info-circle infoIcon"/></span></span>
-                        <input type="text" className="form-control" disabled={isDisabled} onChange={(e) => this.changeTextValue(e.target.value, "Floor")} value={this.state.Floor} id="txtAppraiserReason" placeholder='Enter Floor Details' />
+                        <input type="text" className="form-control" disabled={isDisabled} onChange={(e) => this.changeTextValue(e.target.value, "Floor")} value={this.state.Floor} id="txtFloor" placeholder='Enter Floor Details' />
                     </div>
                       <div className="col-md-4 col-lg-4 col-xs-12">
                         <span className="lblContent">Linked to REMS Process<span className="mandatory"/><span data-toggle="tooltip" className="infoCircle-bottom" title="Please Enter Appraiser Reason"><i className="fa fa-info-circle infoIcon"/></span></span>
-                        <input type="text" className="form-control" disabled={isDisabled} onChange={(e) => this.changeTextValue(e.target.value, "REMSProcess")} value={this.state.REMSProcess} id="txtOccupant" placeholder='Enter Linked to REMS Process' />
+                        <input type="text" className="form-control" disabled={isDisabled} onChange={(e) => this.changeTextValue(e.target.value, "REMSProcess")} value={this.state.REMSProcess} id="txtREMSProcess" placeholder='Enter Linked to REMS Process' />
                     </div>
                 </div>
                 <div className="form-group row">

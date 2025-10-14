@@ -9,12 +9,13 @@ import { Constants } from '../../../../common/constants/Constants';
 import FileUploadService, { IAttachmentFileInfo } from "../../../../common/service/FileUploadService";
 import Appraisals from '../appraisalForm/Appraisals';
 import BuildingDrawingsComponent from '../buildingDrawings/BuildingDrawingsComponent';
+import ULURPComponent from '../ulurpForm/ULURPComponent';
 
 
 
 const componentMap: { [key: string]: React.ComponentType<any> } = {
-  Appraisals: Appraisals,
-  BuildingDrawings: BuildingDrawingsComponent,
+    Appraisals: Appraisals,
+    BuildingDrawings: BuildingDrawingsComponent,
 //   Correspondence: CorrespondenceComponent,
 //   FinancialDocuments: FinancialDocumentsComponent,
 //   InspectionDocuments: InspectionDocumentsComponent,
@@ -26,7 +27,7 @@ const componentMap: { [key: string]: React.ComponentType<any> } = {
 //   SaleAcquisitionUseOwnership: SaleAcquisitionComponent,
 //   SiteorFacilityReports: SiteFacilityComponent,
 //   SpaceRequestProcessDocuments: SpaceRequestComponent,
-//   ULURPApplications: ULURPComponent
+    ULURPApplications: ULURPComponent
 };
 
 
