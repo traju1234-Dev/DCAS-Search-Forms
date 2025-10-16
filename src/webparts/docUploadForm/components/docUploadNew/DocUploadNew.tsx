@@ -10,17 +10,18 @@ import FileUploadService, { IAttachmentFileInfo } from "../../../../common/servi
 import Appraisals from '../appraisalForm/Appraisals';
 import BuildingDrawingsComponent from '../buildingDrawings/BuildingDrawingsComponent';
 import ULURPComponent from '../ulurpForm/ULURPComponent';
-
-
+import CorrespondenceComponent from '../correspondence/CorrespondenceComponent';
+import OtherDocumentsComponent from '../otherDocuments/OtherDocumentsComponent';
+import PolicyProcedureComponent from '../policyAndProcedure/PolicyProcedureComponent';
 
 const componentMap: { [key: string]: React.ComponentType<any> } = {
     Appraisals: Appraisals,
     BuildingDrawings: BuildingDrawingsComponent,
-//   Correspondence: CorrespondenceComponent,
+    Correspondence: CorrespondenceComponent,
 //   FinancialDocuments: FinancialDocumentsComponent,
 //   InspectionDocuments: InspectionDocumentsComponent,
-//   OtherDocuments: OtherDocumentsComponent,
-//   PolicyandProcedureDocuments: PolicyProcedureComponent,
+    OtherDocuments: OtherDocumentsComponent,
+    PolicyandProcedureDocuments: PolicyProcedureComponent,
 //   ProcurementDocuments: ProcurementComponent,
 //   ProjectManagement: ProjectManagementComponent,
 //   RealEstateAgreements: RealEstateComponent,

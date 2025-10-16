@@ -413,7 +413,7 @@ export default class Appraisals extends React.Component<IGeneralDocsProps, IAppr
                         <span className="lblContent">Tenant Name<span className="mandatory"/><span data-toggle="tooltip" className="infoCircle-bottom" title="Please Enter Tenant Name"><i className="fa fa-info-circle infoIcon"/></span></span>
                         <input type="text" className="form-control" disabled={isDisabled} onChange={(e) => this.changeTextValue(e.target.value, "TenantName")} value={this.state.TenantName} id="txtTenant" placeholder='Enter tenant details here' />
                     </div> 
-                </div>                               
+                </div>     
             </div>
         );
     }
